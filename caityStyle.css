@@ -1,26 +1,31 @@
-body{
-  margin: 0px;
+body {
+  margin: 0px
+}
+
+h1, h2 {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
 }
 
 img {
   height: 250px;
 }
 
-h1, h2{
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-}
-
 header {
-  margin:0em;
-  padding: 0.25em;
+  padding: 0em;
   background:rgb(248,133,248);
   color:white;
-  
   display:grid;
+}
+
+header h1 {
+  margin: 0.4em
+}
+header h2 {
+  margin: 0.25em
 }
 
 #subheader {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
 }
