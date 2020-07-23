@@ -42,5 +42,12 @@ main{
   padding-bottom:25vh;
 }
 
+#gallery{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+#gallery img{
+  margin:auto;
+}
 
