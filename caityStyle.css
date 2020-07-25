@@ -37,7 +37,7 @@ header h2 {
 }
 
 main{
-  background:white;
+  background:lightcyan;
   margin-top: 75vh;
   padding-bottom:25vh;
 }
@@ -47,7 +47,11 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#gallery img{
+#gallery div{
   margin:auto;
+}
+
+#gallery div img {
+  background: white;
 }
 
