@@ -16,24 +16,49 @@ html{
   background-size: cover;
 }
 
+/*
+TODO: 
+Media Query, where if the screen-width is <900px
+then the header box is re-created.
+*/
+
 header {
+  margin: 20px;
   padding: 0em;
-  background:rgb(248,133,248);
+  background: rgba(255,150,255);
+  box-shadow: 10px 10px white;
+  max-width: 400px;
+  
   color:white;
   display:grid;
 }
 
 header h1 {
-  margin: 0.4em
+  margin: 0.2em;
+  padding:0.2em;
+  border-bottom: 2px dotted white;
 }
 
 header h2 {
-  margin: 0.25em
+  margin: 0.0em;
+  padding: 0.5em;
 }
+
+header h2:hover{
+  animation-name: hover-animation;
+  animation-duration: 2s;
+}
+
+@keyframes hover-animation{
+  0% {background-color: rgba(255,160,255);}
+  100% {background-color: magenta};
+}
+
+
 
 #subheader {
   display:grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  #grid-template-columns: 2fr 1fr 2fr;
 }
 
 main{
