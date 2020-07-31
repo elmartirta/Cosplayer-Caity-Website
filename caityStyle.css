@@ -1,8 +1,16 @@
 :root{
+  /* TODO - Replace specific variable selectors with more vague descriptions 
+     i.e, replace header-bg-color with "Purple base color", replace header-hover-flash-color with "Purple Highlight" */
+
   --header-bg-color: hsl(270, 80%, 80%);
   --header-hover-color: hsl(270, 100%, 70%);
   --header-hover-flash-color: hsl(270, 100%, 81.4%);
   --header-box-shadow-color: hsl(280, 50%, 50%);
+  --header-text-color: white;
+
+  --main-background-color: hsl(270, 80%, 80%);
+  --main-text-color: hsl(270, 100%, 100%);
+  
 }
 
 body {
@@ -36,7 +44,7 @@ header {
   box-shadow: 10px 10px var(--header-box-shadow-color);
   max-width: 400px;
   
-  color:white;
+  color: var(--header-text-color);
   display:grid;
 }
 
@@ -67,7 +75,8 @@ header h2:hover{
 }
 
 main{
-  background:lightcyan;
+  background: var(--main-background-color);
+  color: var(--main-text-color);
   margin-top: 75vh;
   padding-bottom:25vh;
 }
