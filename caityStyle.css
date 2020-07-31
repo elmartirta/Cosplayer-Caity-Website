@@ -1,3 +1,10 @@
+:root{
+  --header-bg-color: hsl(270, 80%, 80%);
+  --header-hover-color: hsl(270, 100%, 70%);
+  --header-hover-flash-color: hsl(270, 100%, 81.4%);
+  --header-box-shadow-color: hsl(280, 50%, 50%);
+}
+
 body {
   margin: 0px
 }
@@ -25,8 +32,8 @@ then the header box is re-created.
 header {
   margin: 20px;
   padding: 0em;
-  background: rgba(255,150,255);
-  box-shadow: 10px 10px white;
+  background: var(--header-bg-color);
+  box-shadow: 10px 10px var(--header-box-shadow-color);
   max-width: 400px;
   
   color:white;
@@ -50,11 +57,9 @@ header h2:hover{
 }
 
 @keyframes hover-animation{
-  0% {background-color: rgba(255,160,255);}
-  100% {background-color: magenta};
+  0% {background-color: var(--header-hover-flash-color);}
+  100% {background-color: var(--header-hover-color)};
 }
-
-
 
 #subheader {
   display:grid;
