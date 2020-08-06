@@ -4,8 +4,8 @@
 
   --header-bg-color: hsl(270, 80%, 80%);
   --header-hover-color: hsl(270, 100%, 70%);
-  --header-hover-flash-color: hsl(270, 100%, 81.4%);
-  --header-box-shadow-color: hsl(280, 50%, 50%);
+  --header-hover-flash-color: hsl(270, 100%, 80%);
+  --header-box-shadow-color: hsl(275, 50%, 50%);
   --header-text-color: white;
 
   --main-background-color: hsl(270, 80%, 80%);
@@ -61,12 +61,13 @@ header h2 {
 
 header h2:hover{
   animation-name: hover-animation;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes hover-animation{
-  0% {background-color: var(--header-hover-flash-color);}
-  100% {background-color: var(--header-hover-color)};
+  from {background-color: var(--header-hover-flash-color);}
+  to {background-color: var(--header-hover-color)};
 }
 
 #subheader {
