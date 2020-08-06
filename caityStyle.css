@@ -11,6 +11,8 @@
   --main-background-color: hsl(270, 80%, 80%);
   --main-text-color: hsl(270, 100%, 100%);
   
+  --gallery-label-background: hsl(230, 20%, 20%);
+  --gallery-label-box-shadow: hsl(250, 80%,  60%);
 }
 
 body {
@@ -88,10 +90,41 @@ main{
 }
 
 #gallery div{
+  display:flex;
+  margin:0;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+#gallery div img{
   margin:auto;
 }
 
 #gallery div img {
   background: white;
+}
+
+#gallery-1 {
+  background: url("img/Cosplay/Misa Misa.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#gallery-2 {
+  background: url("img/Cosplay/Stage performace.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#gallery-3 {
+  background: url("img/Cosplay/Honoka.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#gallery h2{
+  background: var(--gallery-label-background);
+  box-shadow: 10px 10px var(--gallery-label-box-shadow);
+  padding: 20px;
+
 }
 
