@@ -80,8 +80,8 @@ header h2:hover{
 main{
   background: var(--main-background-color);
   color: var(--main-text-color);
-  margin-top: 75vh;
-  padding-bottom:25vh;
+  margin-top: 50vh;
+  padding-bottom: 5vh;
 }
 
 #gallery{
@@ -95,7 +95,7 @@ main{
   min-height: 500px;
   justify-content: center;
   align-items: center;
-  
+  background-size: cover;
 
 }
 #gallery div img{
@@ -108,17 +108,14 @@ main{
 
 #gallery-1 {
   background: url("img/Cosplay/Misa Misa.jpg") no-repeat center;
-  background-size: cover;
 }
 
 #gallery-2 {
   background: url("img/Cosplay/Stage performace.jpg") no-repeat center;
-  background-size: cover;
 }
 
 #gallery-3 {
   background: url("img/Cosplay/Honoka.jpg") no-repeat center;
-  background-size: cover;
 }
 
 #gallery h2{
